@@ -6,11 +6,16 @@ interface IMailTo {  // Seguindo o padrão (não obrigatório) de toda interface
 interface IMailMessage {
     subject: String;
     body: String;
-    attachment?: string[] ; 
+    attachment?: string[];
+}
+
+interface IMessageDTO {
+    to: IMailTo;
+    message: IMailMessage;
 }
 
 class emailService {
-    sendMail(to: IMailTo, message: IMailMessage) {
+    sendMail({ to, message }: IMessageDTO) { // Data Transfer Object
         console.log(`E-mail enviado para ${to.name}: ${message.subject}`)
     }
 }
