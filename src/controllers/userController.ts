@@ -18,9 +18,15 @@ export default {
         const emailservice = new emailService();
 
         emailservice.sendMail({
-            to: { name: 'Diego Lima', email: 'lima.j.diego@gmail.com' },
-            message: { subject: 'Bem-vindo ao sistema', body: 'Seja bem-vindo' }
-        });        
+            to: {
+                name: 'Diego Lima',
+                email: 'lima.j.diego@gmail.com'
+            },
+            message: {
+                subject: 'Bem-vindo ao sistema',
+                body: 'Seja bem-vindo'
+            }
+        });
         return res.send('email enviado')
     }
 
