@@ -9,7 +9,7 @@ const users = [
 
 
 export default {
-    async index(req: Request, res: Response){
-        return res.json(users)
+    async index(req: Request, res: Response){  // Para fazer a listagem dos users
+        return res.json(users)                 // Retornar um arquivo json
     }
 };
