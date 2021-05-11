@@ -3,7 +3,7 @@ import emailService from '../services/emailService';
 
 const users = [
     {
-        name: 'Diego',
+        name: 'Diego Lima',
         email: 'lima.j.diego@gmail.com'
     }
 ]
